@@ -1,0 +1,40 @@
+{
+  "recorded_utc": "2026-10-29T15:32:00.900931+00:00",
+  "log": "evidence/HND0023.TXT",
+  "log_sha256": "5d41d959c691444918ceb5bd5fe6d7d473e9bd9fedbd04b9da42ef71e235d03e",
+  "gpu": [
+    "GPU-45b93d5e-0bf3-2700-927c-581ee17c94dc",
+    "00000000:09:00.0",
+    "0x270510DE",
+    "617.14",
+    "285.00"
+  ],
+  "long_term_stability_proven": false,
+  "full_unlock_safe_for_all_workloads": false,
+  "correctness_passed": true,
+  "rate_conditions_before": "2610, 3, 796, 45, P2, 54.89",
+  "rate_conditions_after": "2715, 100, 796, 58, P2, 129.74",
+  "rates": {
+    "f16/f16": 177.5,
+    "f16/f32": 181.3,
+    "bf16/f32": 180.5,
+    "s8/s32": 360.3,
+    "dp4a": 90.7,
+    "ffma": 43.7
+  },
+  "fp16_accumulation_ratio": 1.0214084507042254,
+  "bf16_accumulation_ratio": 1.0169014084507042,
+  "full_rate_observed": true,
+  "same_driver_as_baseline": true,
+  "baseline_limitation": "Active Windows desktop; not an isolated matched performance baseline or cold-register proof.",
+  "fully_isolated_matched_comparison": false,
+  "ratios_to_baseline": {
+    "f16/f16": 1.031377106333527,
+    "f16/f32": 2.0672748004561003,
+    "bf16/f32": 2.0675830469644905,
+    "s8/s32": 1.070409982174688,
+    "dp4a": 1.0571095571095572,
+    "ffma": 1.0454545454545456
+  },
+  "hardware_event_review_required": false
+}

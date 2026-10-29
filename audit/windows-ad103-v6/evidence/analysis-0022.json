@@ -1,0 +1,74 @@
+{
+  "log": "release/runs/HND0022.TXT",
+  "log_sha256": "0545179c66c0938630f1ed0b627e85c6fbb0e67ac82db3fd68a1f50fcb3d593a",
+  "efi_version": "handoff-vga-restore-v1",
+  "efi_sha256": "ef4ee3e3742902dae6b26744c4d9fb4a7b8c7323ddd320fe97bcf6de39964787",
+  "test_windows_boot_local": "2026-10-29T23:04:31.5+08:00",
+  "direct_windows_handoff": true,
+  "recovery_reboot": false,
+  "control_completed": true,
+  "vga_restore_ok_logged": true,
+  "gpu_payload": false,
+  "flr": false,
+  "dma": false,
+  "bme_restore": false,
+  "reconnect": false,
+  "observations": {
+    "pre_stop_gpu_attributes": "0x718",
+    "post_owner_stop_gpu_attributes": "0x0",
+    "post_claim_gpu_attributes": "0x300",
+    "vga_restore_before": "gpu=0x300 cmd=0x3 parent=0x700 bctl=0x10",
+    "vga_restore_after": "gpu=0x318 cmd=0x3 parent=0x718 bctl=0x18",
+    "gop": "0 at handoff",
+    "interpretation": "Only VGA 0x18 was restored after the claim; BME stayed off and the claim was released after strict readback. The GPU stayed 0x318 (IO/MEM/VGA) and the parent bridge 0x718 / control 0x18 through handoff."
+  },
+  "windows_samples": {
+    "count": 3,
+    "errors": 0,
+    "nvidia_pnp_status": "OK",
+    "nvidia_problem_code": 0,
+    "nvidia_problem_status": "",
+    "nvidia_driver_version": "32.0.16.1714",
+    "nvidia_smi_driver": "617.14",
+    "nvidia_smi_memory_mib": 16376,
+    "display_outputs": [
+      "1920x1080 at (0,0) primary",
+      "1920x1080 at (1920,0)"
+    ],
+    "nvlddmkm": "loaded; nvidia-smi display_active=Enabled",
+    "other_problem_devices": [],
+    "sample_files": [
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-1.json",
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-2.json",
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-3.json"
+    ],
+    "sample_sha256": {
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-1.json": "6d2bc95e5c8f7564e6a3edc273cb277a54b9f6fae8aa849905cd07b074093630",
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-2.json": "bcfcb6c2742e1fa44d2adea47a3ecfae41613b6b60af91d973e4d755d0f7bb7a",
+      "release\\runs\\display-HND0022-20261029T150431Z\\sample-3.json": "10a5948f86d67f889902e33d962671b38758b1d0fd202217d7e729cc317adf06"
+    }
+  },
+  "resource_files": {
+    "release\\runs\\resource-HND0022-20261029T150431Z\\allocations.ndjson": "642749a14c08c47d36b2030cb1015f742e8780561a98b3260c69f72e44522e5f",
+    "release\\runs\\resource-HND0022-20261029T150431Z\\inventory.json": "5001bd972e07836660ebf5be969634ba44784cd8fa0c3a48cf806f8b5b5f8f90",
+    "release\\runs\\resource-HND0022-20261029T150431Z\\target.json": "a4bcb7858f4e0dd531539cece0cb67576eda679856e9d1fb2599f45f47f20d90"
+  },
+  "resource_findings": {
+    "gpu_allocated": [
+      "0xFB000000-0xFBFFFFFF",
+      "0xD0000000-0xDFFFFFFF",
+      "0xE0000000-0xE1FFFFFF",
+      "0xF000-0xF07F",
+      "0x3B0-0x3BB",
+      "0x3C0-0x3DF",
+      "0xA0000-0xBFFFF"
+    ],
+    "legacy_vga_restored": true,
+    "other_problem_devices": [],
+    "inventory": "77 devices, no truncation"
+  },
+  "conclusion": "Restoring only the GPU VGA attributes 0x18 (and the parent bridge VGA enable) after the Stop/claim fixes Windows Code 12 and restores both physical displays in the control path. The GPU is PnP OK, nvidia-smi sees 16 GiB and an enabled display, and the legacy VGA allocations match the normal baseline. The handoff path is now qualified in a no-unlock control; the full unlock transaction is still unverified. The unlock payload/FLR may clear VGA state again, so the restore must be repeated after FLR in the integrated candidate.",
+  "full_unlock_verified": false,
+  "user_display_confirmation_pending": true,
+  "next_action": "Integrate the VGA 0x18 restore after FLR and before claim release into the full integrated transaction, with strict post-FLR readback, then run the same-boot Windows display/correctness/rate validator."
+}

@@ -1,0 +1,105 @@
+{
+  "log": "release/runs/HND0023.TXT",
+  "log_sha256": "5d41d959c691444918ceb5bd5fe6d7d473e9bd9fedbd04b9da42ef71e235d03e",
+  "efi_version": "integrated-unlock-v6",
+  "efi_sha256": "8aa634c408210133cc6aff5f4fb746c91f650e78a586ed6c4e9ce845b29dc6c1",
+  "test_windows_boot_local": "2026-10-29T23:28:33.5+08:00",
+  "direct_windows_handoff": true,
+  "recovery_reboot": false,
+  "transaction": {
+    "fwsec_scratch": "0",
+    "wpr2": "0x3ff6e00/0x3ff7c00",
+    "payload_marker": "0x67b00001",
+    "payload_halt": 1,
+    "required_permissions": true,
+    "entry_ss0": "0x40106027",
+    "pre_flr_selectors": "SS0=0x88888888 SS1=0x8",
+    "readout_full": 1,
+    "flr_result": 0,
+    "post_flr_gfw": "error=0 pci=0x270510de plm=0x8b8f boot=0x3ff cpuctl=0x10",
+    "vga_restore_before": "gpu=0x300 cmd=0x3 parent=0x700 p_cmd=0x7 bctl=0x10",
+    "vga_restore_after": "gpu=0x318 cmd=0x3 parent=0x718 p_cmd=0x7 bctl=0x18",
+    "transaction_ok": true,
+    "stop": false,
+    "interpretation": "The full v5 transaction completed (FWSEC, SEC2/payload, selectors, FLR, post-FLR GFW) and the post-FLR VGA 0x18 restore passed strict readback with BME off before claim release."
+  },
+  "windows_samples": {
+    "count": 3,
+    "errors": 0,
+    "nvidia_pnp_status": "OK",
+    "nvidia_problem_code": 0,
+    "nvidia_driver_version": "32.0.16.1714",
+    "nvidia_smi_driver": "617.14",
+    "nvidia_smi_memory_mib": 16376,
+    "display_outputs": [
+      "1920x1080 at (0,0) primary",
+      "1920x1080 at (1920,0)"
+    ],
+    "other_problem_devices": [],
+    "gpu_allocated": [
+      "0xFB000000-0xFBFFFFFF",
+      "0xD0000000-0xDFFFFFFF",
+      "0xE0000000-0xE1FFFFFF",
+      "0xF000-0xF07F",
+      "0x3B0-0x3BB",
+      "0x3C0-0x3DF",
+      "0xA0000-0xBFFFF"
+    ],
+    "sample_sha256": {
+      "release\\runs\\display-HND0023-20261029T152833Z\\sample-1.json": "3cb94100ad5938ca1798e97b8c40b470cc97bbdb71dcfaae144617a5e5295532",
+      "release\\runs\\display-HND0023-20261029T152833Z\\sample-2.json": "da46cd1d5459ea92d0dac0538d7a7be7ac938fb50560d04a8a78128cf7e9c75f",
+      "release\\runs\\display-HND0023-20261029T152833Z\\sample-3.json": "dc708f084ad36c2e2ed95fc0eb9c7f66aed8ed97c1cee00cce986f8c1aa256a4"
+    }
+  },
+  "resource_files": {
+    "release\\runs\\resource-HND0023-20261029T152833Z\\allocations.ndjson": "642749a14c08c47d36b2030cb1015f742e8780561a98b3260c69f72e44522e5f",
+    "release\\runs\\resource-HND0023-20261029T152833Z\\inventory.json": "98117ad538bbe3dcac06dcb4785cc244ac8c0f3bc4ca8bb25bef24c33fde905d",
+    "release\\runs\\resource-HND0023-20261029T152833Z\\target.json": "def535fd67360877f3cd2db6ca4af0657d4eaee93566a57a1834057ea2f59276"
+  },
+  "validation": {
+    "path": "release\\runs\\windows-integrated-20261029T153200Z\\result.json",
+    "result_sha256": "d14f1e73c9cd41364f80c971eec00a4999b8be4cf8d23abb6f5fb8d7600fe8c3",
+    "correctness_passed": true,
+    "correctness_runs": 3,
+    "correctness_failures": 0,
+    "max_abs": 0,
+    "full_rate_observed": true,
+    "rates_tf_s": {
+      "f16/f16": 177.5,
+      "f16/f32": 181.3,
+      "bf16/f32": 180.5,
+      "s8/s32": 360.3,
+      "dp4a": 90.7,
+      "ffma": 43.7
+    },
+    "ratios_to_baseline": {
+      "f16/f16": 1.031377106333527,
+      "f16/f32": 2.0672748004561003,
+      "bf16/f32": 2.0675830469644905,
+      "s8/s32": 1.070409982174688,
+      "dp4a": 1.0571095571095572,
+      "ffma": 1.0454545454545456
+    },
+    "same_driver_as_baseline": true,
+    "gpu": [
+      [
+        "GPU-45b93d5e-0bf3-2700-927c-581ee17c94dc",
+        "00000000:09:00.0",
+        "0x270510DE",
+        "617.14",
+        "285.00"
+      ]
+    ],
+    "rate_conditions_before": "2610, 3, 796, 45, P2, 54.89",
+    "rate_conditions_after": "2715, 100, 796, 58, P2, 129.74",
+    "current_boot_events": [],
+    "long_term_stability_proven": false,
+    "full_unlock_safe_for_all_workloads": false,
+    "baseline_limitation": "Active Windows desktop; not an isolated matched performance baseline or cold-register proof.",
+    "fully_isolated_matched_comparison": false
+  },
+  "conclusion": "The full unlock transaction completed and handed off to Windows with both physical displays working. The same boot passed three numerical correctness runs with zero failures and measured 2.067x f16/f32 and 2.068x bf16/f32 over the stock baseline, while f16/f16, s8/s32, dp4a and ffma stayed near 1.0x. This verifies the unlock and the VGA-restore handoff for this boot. It does not prove long-term stability, all workloads, repeatability across cold boots, or that the firmware PCI/bridge VGA mutation is universally safe.",
+  "full_unlock_verified": true,
+  "long_term_safety_verified": false,
+  "next_action": "Keep this boot for additional workload/stress checks if desired. For repeatability, rerun the same v6 USB flow after a cold boot with the same direct-handoff and validation procedure; do not treat one short validation as long-term proof."
+}
