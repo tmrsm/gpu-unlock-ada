@@ -5,12 +5,12 @@ ASUS B550-F / RTX 4070 Ti SUPER test machine, together with the logs and
 same-boot validation from that run. It is not a rebuilt variant and not the
 opt-in port that was proposed separately.
 
-## 白話摘要
+## Plain-language summary
 
-- 這支 `INTEGRATED-UNLOCK-v6.EFI` 就是實際插上 USB、按 U、讓 Windows 直接開機的那支程式。
-- 那次開機：兩台 1920×1080 螢幕都正常、NVIDIA 顯示卡沒有錯誤、數學檢查零錯誤、部分運算速度約為原本的兩倍。
-- 目錄裡的 `evidence/HND0022.TXT`、`evidence/HND0023.TXT` 和 `validation/` 就是當時留下的紀錄。
-- 限制：這只是**一次開機**的成功；不保證長期、所有工作負載、或每次冷開機都一樣。重開機後解鎖會消失，還是要插 USB、按 U。沒有做永久化，也沒有改顯示卡韌體。
+- `INTEGRATED-UNLOCK-v6.EFI` is the program that actually booted from the USB, took the **U** key choice, unlocked the GPU, and handed off to Windows.
+- That boot had both 1920x1080 displays working, no NVIDIA device error, zero numerical failures, and roughly twice the stock rate for the unlocked tensor modes.
+- `evidence/HND0022.TXT`, `evidence/HND0023.TXT` and `validation/` are the records from that boot.
+- Limit: this is **one successful boot**. It does not prove long-term stability, every workload, or repeatability after a cold boot. A reboot loses the unlock; rerun the USB flow. No automatic persistence and no VBIOS/firmware modification is included.
 
 ## Artifact
 
