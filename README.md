@@ -62,6 +62,18 @@ profile; it does **not** add AD104 admission to the Linux module. See the
 binaries or automatic boot installer are distributed. Contribution by **Latence.app**;
 original upstream credits and licences are retained.
 
+## Windows AD103 test artifact (one boot)
+
+The Windows AD103 branch records one successful full unlock on an ASUS
+B550-F / RTX 4070 Ti SUPER (`10de:2705`): both 1920x1080 displays, zero
+numerical failures, and matched FP16/FP32 **2.067x** and BF16/FP32 **2.068x**
+rates. The exact EFI, the HND0021/22/23 logs and the same-boot validation are
+in [`audit/windows-ad103-v6/`](audit/windows-ad103-v6/README.md).
+
+This is **one successful boot**, not long-term stability, all workloads or
+cold-boot repeatability. The unlock is volatile; rerun the USB flow after a
+reboot. No automatic persistence or VBIOS modification is included.
+
 ## Supported targets
 
 The module selects the AD102 firmware and payload automatically for RTX 4090
