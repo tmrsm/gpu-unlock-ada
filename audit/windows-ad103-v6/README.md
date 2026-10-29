@@ -5,7 +5,7 @@ ASUS B550-F / RTX 4070 Ti SUPER test machine, together with the logs and
 same-boot validation from that run. It is not a rebuilt variant and not the
 opt-in port that was proposed separately.
 
-## Plain-language summary
+## Summary
 
 - `INTEGRATED-UNLOCK-v6.EFI` is the program that actually booted from the USB, took the **U** key choice, unlocked the GPU, and handed off to Windows.
 - That boot had both 1920x1080 displays working, no NVIDIA device error, zero numerical failures, and roughly twice the stock rate for the unlocked tensor modes.
