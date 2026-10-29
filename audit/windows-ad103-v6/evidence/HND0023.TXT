@@ -1,0 +1,306 @@
+LOCAL-ASUS transaction candidate; one manual attempt; hardware unvalidated status="0x0000000000000000"
+INTEGRATED-UNLOCK-v6: one manual attempt; FWSEC, SEC2, selectors, FLR, VGA 0x18 restore, checked Windows handoff; experimental hardware run
+Original ESP Windows image size and SHA256 matched status="0x0000000000000000"
+OBS pre-stop: gpu_attr=0x718 gpu_sup=0x1377b gpu_cmd=0x7 gpu_loc=0:9:0.0 parent=1 p_attr=0x718 p_sup=0x1377f p_cmd=0x7 p_bctl=0x18 p_loc=0:0:3.1 gop=1 err=0x0
+OBS pre-stop gpu_cfg[00]=270510de 00100007 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS pre-stop gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS pre-stop gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS pre-stop gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS pre-stop gpu_cfg[32]=00092930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS pre-stop gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS pre-stop gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS pre-stop gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS pre-stop parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS pre-stop parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001800ff
+OBS pre-stop parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS pre-stop parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS pre-stop parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS pre-stop parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS pre-stop parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS pre-stop parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+Consumer 1/3 EDID Stop intent status="0x0000000000000000"
+Consumer 1/3 Stop returned status="0x0000000000000000"
+Consumer 1/3 graph/PCI/input verified status="0x0000000000000000"
+Consumer 2/3 text Stop intent status="0x0000000000000000"
+Consumer 2/3 Stop returned status="0x0000000000000000"
+Consumer 2/3 graph/PCI/input verified status="0x0000000000000000"
+Consumer 3/3 GOP consumer Stop intent status="0x0000000000000000"
+Consumer 3/3 Stop returned status="0x0000000000000000"
+Consumer 3/3 graph/PCI/input verified status="0x0000000000000000"
+PCI owner Stop intent: one attempt; no forced BME clear status="0x0000000000000000"
+PCI owner Stop returned status="0x0000000000000000"
+Root readback command="0x0000" missing_IO_MEM_attributes="0x0300" status="0x0000000000000000"
+Root graph/BME-off/input verified; no remaining GPU owners status="0x0000000000000000"
+OBS post-owner-stop: gpu_attr=0x0 gpu_sup=0x1377b gpu_cmd=0x0 gpu_loc=0:9:0.0 parent=1 p_attr=0x700 p_sup=0x1377f p_cmd=0x7 p_bctl=0x10 p_loc=0:0:3.1 gop=0 err=0x0
+OBS post-owner-stop gpu_cfg[00]=270510de 00100000 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS post-owner-stop gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS post-owner-stop gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS post-owner-stop gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS post-owner-stop gpu_cfg[32]=00092930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS post-owner-stop gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS post-owner-stop gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS post-owner-stop gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-owner-stop parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS post-owner-stop parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001000ff
+OBS post-owner-stop parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS post-owner-stop parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS post-owner-stop parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS post-owner-stop parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-owner-stop parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS post-owner-stop parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+Exclusive claim intent; enable only missing IO/MEM, never BME status="0x0000000000000000"
+IO/MEM enable intent under exclusive claim; BME remains off status="0x0000000000000000"
+IO/MEM enable returned status="0x0000000000000000"
+Exclusive graph/PCI/BME-off/BAR0 verified; starting bounded reads status="0x0000000000000000"
+OBS post-claim: gpu_attr=0x300 gpu_sup=0x1377b gpu_cmd=0x3 gpu_loc=0:9:0.0 parent=1 p_attr=0x700 p_sup=0x1377f p_cmd=0x7 p_bctl=0x10 p_loc=0:0:3.1 gop=0 err=0x0
+OBS post-claim gpu_cfg[00]=270510de 00100003 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS post-claim gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS post-claim gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS post-claim gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS post-claim gpu_cfg[32]=00092930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS post-claim gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS post-claim gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS post-claim gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-claim parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS post-claim parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001000ff
+OBS post-claim parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS post-claim parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS post-claim parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS post-claim parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-claim parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS post-claim parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+GSP BCR pre-reset read lock=0xbadf5620; relying on post-reset BCR verification
+gpu_unlock: ROM chain: pos=0 data=0x52494350 bytes=64512 type=0 last=0
+gpu_unlock: ROM chain: pos=0xfc00 data=0x52494350 bytes=86016 type=0x3 last=0
+gpu_unlock: ROM chain: pos=0x24c00 data=0x5344504e bytes=24576 type=0xe0 last=0
+gpu_unlock: ROM chain: pos=0x2ac00 data=0x5344504e bytes=456192 type=0xe0 last=128
+gpu_unlock: ROM expansion: base=0xfc00 ext=0x24c00 adjust=0x15000
+gpu_unlock: ROM BIT: offset=0x1b0 size=12 stride=6 tokens=19 adjust=0x15000
+gpu_unlock: ROM ucode table: offset=0x99fb6 version=1 header=6 stride=6 entries=16
+gpu_unlock: FWSEC descriptor: offset=0x4581c ROM_bytes=1048576 header=0x32c0301
+gpu_unlock: FWSEC geometry: image_off=0x45b48 size=0x10500 imem=0xf700 va=0 pa=0 dmem=0xd80 pa=0 pkc=0xb24 interface=0x1c engine=0x400 ucode=9 signatures=2 versions=0x3 bytes=768
+asset request: gpu-unlock/610.43.03/gsp_ga10x.bin
+asset result: gpu-unlock/610.43.03/gsp_ga10x.bin error=0 bytes=84277400
+asset cache cleanup: gpu-unlock/610.43.03/gsp_ga10x.bin devres_released=0
+driver probe resources: phase=entry empty=1
+asset request: gpu-unlock/610.43.03/v67-ad102-610.43.03-four-plm.bin
+asset result: gpu-unlock/610.43.03/v67-ad102-610.43.03-four-plm.bin error=0 bytes=64000
+asset cache cleanup: gpu-unlock/610.43.03/v67-ad102-610.43.03-four-plm.bin devres_released=0
+asset request: gpu-unlock/610.43.03/gsp_boot_ad102.bin
+asset result: gpu-unlock/610.43.03/gsp_boot_ad102.bin error=0 bytes=36864
+asset cache cleanup: gpu-unlock/610.43.03/gsp_boot_ad102.bin devres_released=0
+asset request: gpu-unlock/610.43.03/gsp_boot_desc_ad102.bin
+asset result: gpu-unlock/610.43.03/gsp_boot_desc_ad102.bin error=0 bytes=84
+asset cache cleanup: gpu-unlock/610.43.03/gsp_boot_desc_ad102.bin devres_released=0
+asset geometry: image=84226048 signature=4096 boot=36864 code=0x4800 data=0x800 manifest=0 parse=0
+asset request: gpu-unlock/610.43.03/booter_load_ad102.bin
+asset result: gpu-unlock/610.43.03/booter_load_ad102.bin error=0 bytes=57672
+asset cache cleanup: gpu-unlock/610.43.03/booter_load_ad102.bin devres_released=0
+claim: power=0 pm_cap=0x60 flags=0
+claim: command=0x3 capability=0x112c8de1 BAR_mask=0x1
+PCIe extended capability: phase=before-FLR offset=0x100 id=0x2 version=1 next=0x250
+PCIe extended capability: phase=before-FLR offset=0x250 id=0x18 version=1 next=0x258
+PCIe extended capability: phase=before-FLR offset=0x258 id=0x1e version=1 next=0x128
+PCIe extended capability: phase=before-FLR offset=0x128 id=0x4 version=1 next=0x420
+PCIe extended capability: phase=before-FLR offset=0x420 id=0x1 version=2 next=0x600
+PCIe AER observation: phase=before-FLR offset=0x424 value=0
+PCIe AER observation: phase=before-FLR offset=0x428 value=0
+PCIe AER observation: phase=before-FLR offset=0x42c value=0x462030
+PCIe AER observation: phase=before-FLR offset=0x430 value=0x2000
+PCIe AER observation: phase=before-FLR offset=0x434 value=0xa000
+PCIe AER observation: phase=before-FLR offset=0x438 value=0
+PCIe extended capability: phase=before-FLR offset=0x600 id=0xb version=1 next=0x900
+PCIe extended capability: phase=before-FLR offset=0x900 id=0x19 version=1 next=0xbb0
+PCIe extended capability: phase=before-FLR offset=0xbb0 id=0x15 version=1 next=0xc1c
+PCIe ReBAR observation: phase=before-FLR index=0 bar=0 size_encoding=4 capability=0x100 control=0x460
+PCIe ReBAR observation: phase=before-FLR index=1 bar=1 size_encoding=8 capability=0x7fc00 control=0x801
+PCIe ReBAR observation: phase=before-FLR index=2 bar=3 size_encoding=5 capability=0x200 control=0x503
+PCIe extended capability: phase=before-FLR offset=0xc1c id=0x26 version=1 next=0xd00
+PCIe extended capability: phase=before-FLR offset=0xd00 id=0x27 version=1 next=0xe00
+PCIe extended capability: phase=before-FLR offset=0xe00 id=0x25 version=1 next=0
+PCIe extended observation complete: phase=before-FLR caps=11
+layout inputs: fb_mb=0x3ff8 vga=0x10e09 mmu_plm=0x45cb8f mmu_lo=0x100000 mmu_hi=0x3cf7ff0 image=84226048 boot=36864
+layout mmu: lo=0x10000000 hi=0x3cf7ff000 hi_exclusive=0x3cf800000 constrain=0
+mmu lock ignored: high address is not the FB top
+layout decoded: fb=0x3ff800000 vga=0x3ff7e0000 mmu_valid=0 mmu_low=0x10000000 frts=0x100000 heap=0x5800000 result=0
+layout ranges: nonwpr=0x3f4c00000 wpr=0x3f4d00000 heap=0x3f4e00000 gsp=0x3fa680000 boot=0x3ff6d7000 frts=0x3ff6e0000 end=0x3ff7e0000 scrub_floor=0x3ef800000
+DMA masks: streaming=0xffffffffffff coherent=0xfffffffff requested=0xffffffff
+Booter signature: fuse_raw=0x1 version=1 signatures=2 size=768
+DMA buffers mapped: 2048
+DMA buffers mapped: 4096
+DMA buffers mapped: 6144
+DMA buffers mapped: 8192
+DMA buffers mapped: 10240
+DMA buffers mapped: 12288
+DMA buffers mapped: 14336
+DMA buffers mapped: 16384
+DMA buffers mapped: 18432
+DMA buffers mapped: 20480
+entry: plm=0xffffff8f ss0=0x40106027 ss1=0x1 wpr2_hi=0
+AD102 permission before-firmware: WPR_CFG[0x1fa7cc]=0x4cb8f before=0x4cb8f expected=0xfffff0ff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission before-firmware: FBPA[0x9a0148]=0xffffff0f before=0xffffff0f expected=0xffffffff required=0 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission before-firmware: WPR[0x1fa7c4]=0x4cb8f before=0x4cb8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission before-firmware: FEAT[0x823804]=0xffffff8f before=0xffffff8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 before-firmware: readout1=0x410080 fields=0 0 2 0 0 2 0 2 0 valid=1 full=0
+FWSEC: reading PROM at 0x300000
+FWSEC: PROM bytes=1048576 signature=0xaa55
+gpu_unlock: ROM chain: pos=0 data=0x52494350 bytes=64512 type=0 last=0
+gpu_unlock: ROM chain: pos=0xfc00 data=0x52494350 bytes=86016 type=0x3 last=0
+gpu_unlock: ROM chain: pos=0x24c00 data=0x5344504e bytes=24576 type=0xe0 last=0
+gpu_unlock: ROM chain: pos=0x2ac00 data=0x5344504e bytes=456192 type=0xe0 last=128
+gpu_unlock: ROM expansion: base=0xfc00 ext=0x24c00 adjust=0x15000
+gpu_unlock: ROM BIT: offset=0x1b0 size=12 stride=6 tokens=19 adjust=0x15000
+gpu_unlock: ROM ucode table: offset=0x99fb6 version=1 header=6 stride=6 entries=16
+gpu_unlock: FWSEC descriptor: offset=0x4581c ROM_bytes=1048576 header=0x32c0301
+gpu_unlock: FWSEC geometry: image_off=0x45b48 size=0x10500 imem=0xf700 va=0 pa=0 dmem=0xd80 pa=0 pkc=0xb24 interface=0x1c engine=0x400 ucode=9 signatures=2 versions=0x3 bytes=768
+gpu_unlock: FWSEC interface: offset=0x1c version=1 header=4 stride=8 entries=2 FRTS=0x3ff6e0000
+gpu_unlock: FWSEC mapper: version=3 size=64 cmd_offset=0xd40 cmd_size=64
+FWSEC fuse: raw=0x1 version=1
+gpu_unlock: FWSEC signature selection: versions=0x3 fuse_version=1 sig_bytes=384
+Bus Master enable intent: command=0x3 attributes=0x300
+Bus Master enabled: command=0x7 attributes=0x700 matched=1
+Falcon reset begin: base=0x110000
+poll timeout tolerated: reg=0x1100f4 last=0x47b7 mask=0x80000000 expected=0x80000000 budget_us=1000
+Falcon pre-reset timeout tolerated per HW bug 3419321
+Falcon reset done: base=0x110000 hwcfg=0x67b7 chip=0x193000a1
+Falcon DMA: base=0x110000 dest=0 offset=0 src=0xb5999000 size=0xf700 cmd=0x614
+Falcon DMA: base=0x110000 dest=0 offset=0 src=0xb59a8700 size=0xd80 cmd=0x600
+Falcon start: base=0x110000 cpuctl=0x10 code_va=0 sig_dmem=0xb24 engine_mask=0x400 ucode=9 mailbox=0:0
+FWSEC result: scratch=0 expected_hi16=0
+FWSEC WPR2: low=0x3ff6e00 high=0x3ff7c00 expected_page=0x3ff6e0 end=0x3ff7e0000
+Falcon reset begin: base=0x840000
+poll timeout tolerated: reg=0x8400f4 last=0x67b7 mask=0x80000000 expected=0x80000000 budget_us=1000
+Falcon pre-reset timeout tolerated per HW bug 3419321
+Falcon reset done: base=0x840000 hwcfg=0x67b7 chip=0x193000a1
+Falcon DMA: base=0x840000 dest=0 offset=0x100 src=0xc660c000 size=0x7d00 cmd=0x614
+Falcon DMA: base=0x840000 dest=0 offset=0 src=0xc6613e00 size=0x6000 cmd=0x600
+Falcon start: base=0x840000 cpuctl=0x10 code_va=0x100 sig_dmem=0x10 engine_mask=0x1 ucode=3 mailbox=0:0xc65fb000
+AD102 permission after-payload: WPR_CFG[0x1fa7cc]=0xfffff0ff before=0x4cb8f expected=0xfffff0ff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission after-payload: FBPA[0x9a0148]=0xffffff0f before=0xffffff0f expected=0xffffffff required=0 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission after-payload: WPR[0x1fa7c4]=0xffffffff before=0x4cb8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission after-payload: FEAT[0x823804]=0xffffffff before=0xffffff8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 after-payload: readout1=0x410080 fields=0 0 2 0 0 2 0 2 0 valid=1 full=0
+AD102 payload result: boot=0 halt=0 marker=0x67b00001 expected=0x67b00001 marker_ok=1 required_permissions=1 cpuctl=0x10 halted=1 debug=0xda550000 ss0=0x40106027 ss1=0x1
+selector read: SS0=0x40106027 expected_unlock=0x88888888
+selector write: SS0=0x88888888
+selector result: SS0=0x88888888 expected=0x88888888 matched=1
+selector read: SS1=0x1 expected_unlock=0x8
+selector write: SS1=0x8
+selector result: SS1=0x8 expected=0x8 matched=1
+AD102 selectors-applied: readout1=0 fields=0 0 0 0 0 0 0 0 0 valid=1 full=1
+pre-FLR selectors: ss0=0x88888888 expected=0x88888888 ss1=0x8 expected=0x8
+AD102 pre-FLR: readout1=0 fields=0 0 0 0 0 0 0 0 0 valid=1 full=1
+PCIe FLR begin: BME=0 DMA retained, chip=0x193000a1
+PCIe FLR returned: result=0
+PCIe extended capability: phase=after-FLR offset=0x100 id=0x2 version=1 next=0x250
+PCIe extended capability: phase=after-FLR offset=0x250 id=0x18 version=1 next=0x258
+PCIe extended capability: phase=after-FLR offset=0x258 id=0x1e version=1 next=0x128
+PCIe extended capability: phase=after-FLR offset=0x128 id=0x4 version=1 next=0x420
+PCIe extended capability: phase=after-FLR offset=0x420 id=0x1 version=2 next=0x600
+PCIe AER observation: phase=after-FLR offset=0x424 value=0
+PCIe AER observation: phase=after-FLR offset=0x428 value=0
+PCIe AER observation: phase=after-FLR offset=0x42c value=0x462030
+PCIe AER observation: phase=after-FLR offset=0x430 value=0x2000
+PCIe AER observation: phase=after-FLR offset=0x434 value=0xa000
+PCIe AER observation: phase=after-FLR offset=0x438 value=0
+PCIe extended capability: phase=after-FLR offset=0x600 id=0xb version=1 next=0x900
+PCIe extended capability: phase=after-FLR offset=0x900 id=0x19 version=1 next=0xbb0
+PCIe extended capability: phase=after-FLR offset=0xbb0 id=0x15 version=1 next=0xc1c
+PCIe ReBAR observation: phase=after-FLR index=0 bar=0 size_encoding=4 capability=0x100 control=0x460
+PCIe ReBAR observation: phase=after-FLR index=1 bar=1 size_encoding=8 capability=0x7fc00 control=0x801
+PCIe ReBAR observation: phase=after-FLR index=2 bar=3 size_encoding=5 capability=0x200 control=0x503
+PCIe extended capability: phase=after-FLR offset=0xc1c id=0x26 version=1 next=0xd00
+PCIe extended capability: phase=after-FLR offset=0xd00 id=0x27 version=1 next=0xe00
+PCIe extended capability: phase=after-FLR offset=0xe00 id=0x25 version=1 next=0
+PCIe extended observation complete: phase=after-FLR caps=11
+post-FLR BAR ready: chip=0x193000a1
+post-FLR GFW result: error=0 pci=0x270510de plm=0x8b8f boot=0x3ff cpuctl=0x10 budget_us=2050000
+engine reset assert: phase=post-FLR base=0x840000 before=0 write=0x1
+engine reset propagation: phase=post-FLR base=0x840000 first=0x1 tenth=0x1
+engine reset asserted: phase=post-FLR base=0x840000 error=0 last=0x1
+engine reset release: phase=post-FLR base=0x840000 before=0x1 write=0
+engine reset released: phase=post-FLR base=0x840000 engine=0 hwcfg2=0x67b7
+post-FLR SEC2 reset released, GSP halted, BME=0 pending=0 WPR2=1ffffe00:00000000 SS0=88888888 SS1=00000008
+AD102 permission post-FLR: WPR_CFG[0x1fa7cc]=0x4cb8f before=0x4cb8f expected=0xfffff0ff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission post-FLR: FBPA[0x9a0148]=0xffffff0f before=0xffffff0f expected=0xffffffff required=0 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission post-FLR: WPR[0x1fa7c4]=0x4cb8f before=0x4cb8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 permission post-FLR: FEAT[0x823804]=0xffffffff before=0xffffff8f expected=0xffffffff required=1 valid=1 pci=0x270510de chip=0x193000a1
+AD102 post-FLR: readout1=0 fields=0 0 0 0 0 0 0 0 0 valid=1 full=1
+driver probe resources: phase=handoff empty=1
+restore streaming mask: actual=0xffffffffffff expected=0xffffffffffff
+restore coherent mask: actual=0xfffffffff expected=0xfffffffff
+restore PCI command: actual=0x3 original=0x3 mask=0x6
+OBS post-flr-pre-vga: gpu_attr=0x300 gpu_sup=0x1377b gpu_cmd=0x3 gpu_loc=0:9:0.0 parent=1 p_attr=0x700 p_sup=0x1377f p_cmd=0x7 p_bctl=0x10 p_loc=0:0:3.1 gop=0 err=0x0
+OBS post-flr-pre-vga gpu_cfg[00]=270510de 00100003 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS post-flr-pre-vga gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS post-flr-pre-vga gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS post-flr-pre-vga gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS post-flr-pre-vga gpu_cfg[32]=00002930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS post-flr-pre-vga gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS post-flr-pre-vga gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS post-flr-pre-vga gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-flr-pre-vga parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS post-flr-pre-vga parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001000ff
+OBS post-flr-pre-vga parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS post-flr-pre-vga parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS post-flr-pre-vga parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS post-flr-pre-vga parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-flr-pre-vga parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS post-flr-pre-vga parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+VGA restore before: gpu_attr=0x300 gpu_cmd=0x3 p_attr=0x700 p_cmd=0x7 p_bctl=0x10
+VGA RESTORE OK: gpu_attr=0x318 gpu_cmd=0x3 p_attr=0x718 p_cmd=0x7 p_bctl=0x18
+OBS post-vga-restore: gpu_attr=0x318 gpu_sup=0x1377b gpu_cmd=0x3 gpu_loc=0:9:0.0 parent=1 p_attr=0x718 p_sup=0x1377f p_cmd=0x7 p_bctl=0x18 p_loc=0:0:3.1 gop=0 err=0x0
+OBS post-vga-restore gpu_cfg[00]=270510de 00100003 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS post-vga-restore gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS post-vga-restore gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS post-vga-restore gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS post-vga-restore gpu_cfg[32]=00002930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS post-vga-restore gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS post-vga-restore gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS post-vga-restore gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-vga-restore parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS post-vga-restore parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001800ff
+OBS post-vga-restore parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS post-vga-restore parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS post-vga-restore parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS post-vga-restore parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS post-vga-restore parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS post-vga-restore parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+Root readback command="0x0003" missing_IO_MEM_attributes="0x0000" status="0x0000000000000000"
+Root graph/BME-off/input verified; no remaining GPU owners status="0x0000000000000000"
+OBS pre-handoff: gpu_attr=0x318 gpu_sup=0x1377b gpu_cmd=0x3 gpu_loc=0:9:0.0 parent=1 p_attr=0x718 p_sup=0x1377f p_cmd=0x7 p_bctl=0x18 p_loc=0:0:3.1 gop=0 err=0x0
+OBS pre-handoff gpu_cfg[00]=270510de 00100003 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS pre-handoff gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS pre-handoff gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS pre-handoff gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS pre-handoff gpu_cfg[32]=00002930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS pre-handoff gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS pre-handoff gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS pre-handoff gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS pre-handoff parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS pre-handoff parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001800ff
+OBS pre-handoff parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS pre-handoff parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS pre-handoff parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS pre-handoff parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS pre-handoff parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS pre-handoff parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+OBS final-pre-close: gpu_attr=0x318 gpu_sup=0x1377b gpu_cmd=0x3 gpu_loc=0:9:0.0 parent=1 p_attr=0x718 p_sup=0x1377f p_cmd=0x7 p_bctl=0x18 p_loc=0:0:3.1 gop=0 err=0x0
+OBS final-pre-close gpu_cfg[00]=270510de 00100003 030000a1 00800010 fb000000 d000000c 00000000 e000000c
+OBS final-pre-close gpu_cfg[08]=00000000 0000f001 00000000 89581043 fc000000 00000060 00000000 00000105
+OBS final-pre-close gpu_cfg[16]=89581043 00000000 00000000 00000000 00000000 00000001 0023d6ce 00000000
+OBS final-pre-close gpu_cfg[24]=48036801 00000008 00807805 00000000 00000000 00000000 0012b410 112c8de1
+OBS final-pre-close gpu_cfg[32]=00002930 00457904 11040040 00000000 00000000 00000000 00000000 00070813
+OBS final-pre-close gpu_cfg[40]=00000400 0180001e 001f0004 00000000 00000000 01140009 00000000 00000000
+OBS final-pre-close gpu_cfg[48]=00000000 00000000 00050011 00b90000 00ba0000 00000000 00000000 00000000
+OBS final-pre-close gpu_cfg[56]=00000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS final-pre-close parent_cfg[00]=14831022 00100007 06040000 00810010 00000000 00000000 00090900 2000f1f1
+OBS final-pre-close parent_cfg[08]=fc00fb00 e1f1d001 00000000 00000000 00000000 00000050 00000000 001800ff
+OBS final-pre-close parent_cfg[16]=00000000 00000000 00000000 00000000 c8035801 00000000 0142a010 00008022
+OBS final-pre-close parent_cfg[24]=00002930 00737904 71040040 00042580 01400000 00010000 00000000 007019df
+OBS final-pre-close parent_cfg[32]=00000406 0180001e 001f0004 00000000 00000000 00000000 00000000 00000000
+OBS final-pre-close parent_cfg[40]=0080c005 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+OBS final-pre-close parent_cfg[48]=0000c80d 88081043 a8030008 00000000 00000000 00000000 00000000 00000000
+OBS final-pre-close parent_cfg[56]=00000000 ffffffff 00000000 00000000 00000000 00000000 00000000 00000000
+VGA-RESTORE INTEGRATED OK: GPU 0x318 and parent 0x718/control 0x18 verified after FLR
+TRANSACTION OK: native claim and DMA released; checking graph again after log close
